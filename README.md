@@ -9,9 +9,22 @@ La primera actividad se centra en combinar las rutinas creadas para la práctica
 
 Para esto se hace uso del sistema de creación de señales que provee Robot Studio, creando 2 señales que recibiran las entradas digitales de los dos botones antes mencionados. Una vez se ha generado esta interfaz entre el mundo físico y virtual, se procede a procesar estas señales digitales a través del uso de condicionales en RAPPID, permitiendo así que un clasificador defina qué rutina se activa dependiendo de la señal que tiene un valor igual a 1.
 
+En este primer ejercicio se usaron las rutinas que pudimos encontrar en el cuarto laboratorio que podemos encontrar en el siguiente repositorio (https://github.com/amedinae/robotics_lab_4) , con el objetivo de aliviar los errores encontrados en el cuarto laboratorio se hicieron varios cambios, para recordar, estos retos y sus soluciones fueron:
+
+- El plano inclinado contaba con un angulo de rotación en el eje z del world El cual en el momento de hacer el montaje fisico era dificil de identificar, por lo que se llevo acabo todo un proceso de prueba y error alrededor de estos. Este angulo de rotación se definio como 30 grados, de esta manera era posible medirlo con una escuadra.
+
+- Las letras estaban muy cerca a la medida maxima del tablero, lo que teniendo en cuenta que cuenta con una estructura pegada hizo problematico cuadrar el tablero. Se hizo el espaciado entre las letras 4cm más pequeño.
+
+- El eje x del workobject inclinado estaba mas lejos de lo que teniamos como base en el laboratorio, lo que causo que tuvieramos que extender la base con utensilios escolares como cuadernos y carpetas. Para esto la solución era acercarlo en este eje, aunque suene simple debido a las configuraciones esto consideraba un reto ya que a medida que se acercaba al robot menos configuraciones eran posibles. Para solucionar esto fue necesario cambiar un  path del espacio cartesiano al espacio de las juntas con el objetivo de que se cambiara la configuración entre palabras y asi se pudiera llegar a distintas zonas en distintas configuraciones.
+
+Una vez se solucionaron estos problemas se procedio a posicionar en un solo programa, los dos path como procedimientos fuera del main routine. A estos se les llamo path_inclinado y path_plano. Posterior a esto es necesario realizar la rutina main que se encargara de manejar el uso de estos paths.Para ello, se realizo la creación de dos entradas digitales (posteriormente ya creadas en el controlador fisico) en Robot Studio, bajo la pestaña de Controlador-Configuration-I/O Systems y la creación de una nueva señal accesible.
+
+El main routine consta del uso de estas dos señales de entrada digital para la elección de una de las dos rutinas, esto se puede realizar gracias a un if que como argumento tiene eventos mutualmente excluyentes en los que la activación de uno de los dos botones realiza la elección de los path. Otro dato importante a mencionar es que el main solo realiza la validación de if una vez. Esto debido a que este codigo se puede activar ciclicamente en el controlador fisico IRC5 y de esta manera puede correr el main de manera recurrente, evaluando asi los botones cada vez que se termine un path, y este a la espera de un nuevo comando.
 
 A continuación se presenta un video de la ejecución de las rutinas en el laboratorio.
 [![Práctica en el laboratorio](https://img.youtube.com/vi/H6_FSDALVg4/0.jpg)](https://www.youtube.com/watch?v=H6_FSDALVg4 "Práctica en el laboratorio")
+
+
 
 
 ### Tarea 2
@@ -49,11 +62,31 @@ En donde los botones obj1, obj2 y obj3 permiten elegir qué botella se va a toma
 
 Este procesamiento de señales fue hecho a partir de condicionales en RAPPID, en dónde la activación o desactivación de una señal implicaba la ejecución de una cierta rutina.
 
+Aca se muestra el arreglo de condicionales para la selección de la botella.
+
+<img src="https://i.postimg.cc/MGBrqRmn/If1.png" alt="drawing" width="700"/>
+
+Y acá se muestra el arreglo de condicionales para la selección de rutas para depositar la respectiva botella en cada uno de los cajones del estante.
+
+<img src="https://i.postimg.cc/vBd2BB03/if2.png" alt="drawing" width="700"/>
+
 
 
 A continuación se muestra la simulación de este ejercicio.
 
 [![Pick and Place](https://img.youtube.com/vi/CJVA7OCdlIg/0.jpg)](https://www.youtube.com/watch?v=CJVA7OCdlIg "Pick and Place")
 
+
+## Análisis
+
+### Analisis del primer punto: 
+
+-La validación fisica del espacio y las herramientas a disposicion hizo de esta practica algo mucho más facil de montar.Lo cual ahorro mucho tiempo, de esto podemos hacer el analisis de la necesidad de conocer, controlar y supervisar el ambiente bajo el cual va a trabajar el robot, sobretodo en aplicaciones donde el mismo no tiene la sensorica para detetar su ambiente, sino asi como en esta practica sigue una rutina de posición a seguir sin importar sus alrededores.
+- El uso de varias configuraciones dentro de una rutina puede contribuir a nuevos path posibles, dentro de los que el robot puede manejar diferentes poses con el objetivo de llevar acabo la mejor segun la necesidad, el objetivo, el ambiente y los futuros path a llevar acabo. 
+- La entradas digitales desde una aplicación basica como esta nos permiten el control de distintas rutinas con caracteres diferentes, esto puede extenderse a distintas aplicaciones donde se puede llevar acabo una decisión dependiendo de las necesidad de automatización.
+
+### Analisis del segundo punto: 
+
+## Conclusiones
 
 
