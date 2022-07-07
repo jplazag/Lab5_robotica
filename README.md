@@ -19,6 +19,9 @@ En este primer ejercicio se usaron las rutinas que pudimos encontrar en el cuart
 
 Una vez se solucionaron estos problemas se procedio a posicionar en un solo programa, los dos path como procedimientos fuera del main routine. A estos se les llamo path_inclinado y path_plano. Posterior a esto es necesario realizar la rutina main que se encargara de manejar el uso de estos paths.Para ello, se realizo la creación de dos entradas digitales (posteriormente ya creadas en el controlador fisico) en Robot Studio, bajo la pestaña de Controlador-Configuration-I/O Systems y la creación de una nueva señal accesible.
 
+<img src="https://i.postimg.cc/7hyZLgzb/Yeison1.jpg" alt="drawing" width="500"/>
+
+
 El main routine consta del uso de estas dos señales de entrada digital para la elección de una de las dos rutinas, esto se puede realizar gracias a un if que como argumento tiene eventos mutualmente excluyentes en los que la activación de uno de los dos botones realiza la elección de los path. Otro dato importante a mencionar es que el main solo realiza la validación de if una vez. Esto debido a que este codigo se puede activar ciclicamente en el controlador fisico IRC5 y de esta manera puede correr el main de manera recurrente, evaluando asi los botones cada vez que se termine un path, y este a la espera de un nuevo comando.
 
 A continuación se presenta un video de la ejecución de las rutinas en el laboratorio.
@@ -84,7 +87,7 @@ A continuación se muestra la simulación de este ejercicio.
 
 - La validación fisica del espacio y las herramientas a disposicion hizo de esta practica algo mucho más facil de montar. Lo cual ahorro mucho tiempo, de esto podemos hacer el analisis de la necesidad de conocer, controlar y supervisar el ambiente bajo el cual va a trabajar el robot, sobretodo en aplicaciones donde el mismo no tiene la sensorica para detetar su ambiente, sino asi como en esta practica sigue una rutina de posición a seguir sin importar sus alrededores.
 - El uso de varias configuraciones dentro de una rutina puede contribuir a nuevos path posibles, dentro de los que el robot puede manejar diferentes poses con el objetivo de llevar acabo la mejor segun la necesidad, el objetivo, el ambiente y los futuros path a llevar acabo. 
-- La entradas digitales desde una aplicación basica como esta nos permiten el control de distintas rutinas con caracteres diferentes, esto puede extenderse a distintas aplicaciones donde se puede llevar acabo una decisión dependiendo de las necesidad de automatización.
+
 
 ### Analisis del segundo punto: 
 
@@ -94,6 +97,8 @@ A continuación se muestra la simulación de este ejercicio.
 
 ## Conclusiones
 
-- Aún nos falta mucho camino por recorrer a la hora de hablar de softares como Robot Studio, ya que a la hora de desarrollar la tarea 2 de Pick and Place, nos encontramos con un problema al querer mover piezas con diferentes formas, debido a que no hallamos una forma de hacer que el manipulador modifique sus movimientos en aras de adaptarce a geometrías variadas. 
+- La entradas digitales desde una aplicación basica como esta nos permiten el control de distintas rutinas con caracteres diferentes, esto puede extenderse a distintas aplicaciones donde se puede llevar acabo una decisión dependiendo de las necesidad de automatización.
+
+- Aún nos falta mucho camino por recorrer a la hora de hablar de softwares como Robot Studio, ya que a la hora de desarrollar la tarea 2 de Pick and Place, nos encontramos con un problema al querer mover piezas con diferentes formas, debido a que no hallamos una forma de hacer que el manipulador modifique sus movimientos en aras de adaptarse a geometrías variadas. 
 
 - 
