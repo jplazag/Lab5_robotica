@@ -82,12 +82,18 @@ A continuación se muestra la simulación de este ejercicio.
 
 ### Analisis del primer punto: 
 
--La validación fisica del espacio y las herramientas a disposicion hizo de esta practica algo mucho más facil de montar.Lo cual ahorro mucho tiempo, de esto podemos hacer el analisis de la necesidad de conocer, controlar y supervisar el ambiente bajo el cual va a trabajar el robot, sobretodo en aplicaciones donde el mismo no tiene la sensorica para detetar su ambiente, sino asi como en esta practica sigue una rutina de posición a seguir sin importar sus alrededores.
+- La validación fisica del espacio y las herramientas a disposicion hizo de esta practica algo mucho más facil de montar. Lo cual ahorro mucho tiempo, de esto podemos hacer el analisis de la necesidad de conocer, controlar y supervisar el ambiente bajo el cual va a trabajar el robot, sobretodo en aplicaciones donde el mismo no tiene la sensorica para detetar su ambiente, sino asi como en esta practica sigue una rutina de posición a seguir sin importar sus alrededores.
 - El uso de varias configuraciones dentro de una rutina puede contribuir a nuevos path posibles, dentro de los que el robot puede manejar diferentes poses con el objetivo de llevar acabo la mejor segun la necesidad, el objetivo, el ambiente y los futuros path a llevar acabo. 
 - La entradas digitales desde una aplicación basica como esta nos permiten el control de distintas rutinas con caracteres diferentes, esto puede extenderse a distintas aplicaciones donde se puede llevar acabo una decisión dependiendo de las necesidad de automatización.
 
 ### Analisis del segundo punto: 
 
+- Con cada práctica que vamos desarrollando vamos conociendo más de todas las utilidades que representan los robots a la hora de solucionar problemas, como hoy lo pudimos aprender a la hora de hacer una aproximación a una actividad de pick and place industrial.
+
+- Dividir los movimientos del robot en 3 tipos de rutinas diferentes fue de gran utilidad, ya que de otra manera hubiera sido necesario hacer 6 rutas para cada botella, llevando a 18 rutinas para las 3 botellas, a diferencia de las 12 que se plantearon para resolver el problema. Esto puede parecer una diferencia bastante pequeña, pero también se debe considerar que si el número de botellas aumenta, esta diferencia también lo hará y por ende la primera aproximación de hacer 6 rutinas por botellaa demandaría más recursos a la hora de diseñar e implementar la solución.
+
 ## Conclusiones
 
+- Aún nos falta mucho camino por recorrer a la hora de hablar de softares como Robot Studio, ya que a la hora de desarrollar la tarea 2 de Pick and Place, nos encontramos con un problema al querer mover piezas con diferentes formas, debido a que no hallamos una forma de hacer que el manipulador modifique sus movimientos en aras de adaptarce a geometrías variadas. 
 
+- 
