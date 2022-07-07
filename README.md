@@ -25,4 +25,33 @@ De la misma manera se diseña el modelo de una botella, que hará las veces del 
 
 <img src="https://i.postimg.cc/D0Kj8D0L/Botella.png" alt="drawing" width="200"/>
 
-Así como también se diseña el estante con estructura matricial en donde se posicionaran las botellas
+Así como también se diseña el estante con estructura matricial en donde se posicionaran las botellas.
+
+<img src="https://i.postimg.cc/3w83DS4M/Estante.png" alt="drawing" width="400"/>
+
+A partir de aquí se procede a diseñar las diferentes rutinas que conformarán el proceso de "pick and place" de las 3 botellas en 3 particiones diferentes del estante matricial. Para ello se plantea la siguiente estructura para las rutinas.
+
+- **Rutinas "Pick"**:
+Primero se plantean 3 rutinas en las que se toman las botellas, una botella por cada rutina, para luego llevarla a un punto específico por el que pasan todas botellas en su respectiva rutina, logrando así una transición más sencilla a las rutinas de posicionamiento. Es importante aclarar que en este caso se requieren de 3 rutinas, ya que las acciones de los smart objects usados son dependientes de un solo objeto al tiempo, por lo que se debe generar una acción de agarre por cada elemento, de la misma manera en que se hace cuando se va a liberar un cierto objeto del agarre inicial.
+
+- **Rutinas de posicionamiento**:
+En estas rutinas se continua con la manipulación de la botella que fue tomada en la parte anterior, para llevarla desde el punto en común que comparten las rutinas "Pick" para llevarlas hasta su destino en el estante matricial.
+
+- **Rutinas "Place"**:
+En estas últimas 3 rutinas se libera la botella que se ha venido manipulando en la ubicación de destino.
+
+
+Una vez ya se han construido cada una de las rutinas, se procede a generar las señales que recibirán la información de los botones que permitirán elegir la clase de movimiento que se va a desarrollar. A continuación se muestran los botones generados.
+
+<img src="https://i.postimg.cc/9XwHzRXY/Botones.jpg" alt="drawing" width="400"/>
+
+En donde los botones obj1, obj2 y obj3 permiten elegir qué botella se va a tomar; mientras que los botones pos1, pos2, pos3, pos4, pos5 y pos6 permiten seleccionar el cajón en el que se depositará la respectiva botella.
+
+
+
+A continuación se muestra la simulación de este ejercicio.
+
+[![Pick and Place](https://img.youtube.com/vi/CJVA7OCdlIg/0.jpg)](https://www.youtube.com/watch?v=CJVA7OCdlIg "Pick and Place")
+
+
+
