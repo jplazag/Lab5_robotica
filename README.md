@@ -45,7 +45,9 @@ Una vez ya se han construido cada una de las rutinas, se procede a generar las s
 
 <img src="https://i.postimg.cc/9XwHzRXY/Botones.jpg" alt="drawing" width="400"/>
 
-En donde los botones obj1, obj2 y obj3 permiten elegir qué botella se va a tomar; mientras que los botones pos1, pos2, pos3, pos4, pos5 y pos6 permiten seleccionar el cajón en el que se depositará la respectiva botella.
+En donde los botones obj1, obj2 y obj3 permiten elegir qué botella se va a tomar; mientras que los botones pos1, pos2, pos3, pos4, pos5 y pos6 permiten seleccionar el cajón en el que se depositará la respectiva botella. Finalmente se tiene el botón de start, que es el que da la señal de arranque para cuando ya se ha elegido la botella a manipular y su posición final.
+
+Este procesamiento de señales fue hecho a partir de condicionales en RAPPID, en dónde la activación o desactivación de una señal implicaba la ejecución de una cierta rutina.
 
 
 
