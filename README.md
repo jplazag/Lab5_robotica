@@ -86,6 +86,7 @@ A continuación se muestra la simulación de este ejercicio.
 ### Analisis del primer punto: 
 
 - La validación fisica del espacio y las herramientas a disposicion hizo de esta practica algo mucho más facil de montar. Lo cual ahorro mucho tiempo, de esto podemos hacer el analisis de la necesidad de conocer, controlar y supervisar el ambiente bajo el cual va a trabajar el robot, sobretodo en aplicaciones donde el mismo no tiene la sensorica para detetar su ambiente, sino asi como en esta practica sigue una rutina de posición a seguir sin importar sus alrededores.
+
 - El uso de varias configuraciones dentro de una rutina puede contribuir a nuevos path posibles, dentro de los que el robot puede manejar diferentes poses con el objetivo de llevar acabo la mejor segun la necesidad, el objetivo, el ambiente y los futuros path a llevar acabo. 
 
 
@@ -98,6 +99,10 @@ A continuación se muestra la simulación de este ejercicio.
 ## Conclusiones
 
 - La entradas digitales desde una aplicación basica como esta nos permiten el control de distintas rutinas con caracteres diferentes, esto puede extenderse a distintas aplicaciones donde se puede llevar acabo una decisión dependiendo de las necesidad de automatización.
+
+- A pesar de que en esta práctica usamos señales digitales para fines muy variados, consideramos que no profundizamos lo suficiente en el uso de salidas que nos permitieran evaluar el estado del robot en tiempo real y saber datos importantes como la culminación de una tarea, ya que para automatizar una planta de producción puede ser realmente necesario tener dominio sobre dicha información.
+
+- Considerando la importancia del tratamiento de entradas y salidas, pudo haber sido sumamente enriquecedor el hecho de desarrollar una práctica que permitiera interactuar directamente con el controlador y poder establecer nuestro propio mando de control, para así desarrollar una mejor idea del proceso en general, pero muy a nuestro pesar el tiempo no fue suficiente para alcanzar tal objetivo.
 
 - Aún nos falta mucho camino por recorrer a la hora de hablar de softwares como Robot Studio, ya que a la hora de desarrollar la tarea 2 de Pick and Place, nos encontramos con un problema al querer mover piezas con diferentes formas, debido a que no hallamos una forma de hacer que el manipulador modifique sus movimientos en aras de adaptarse a geometrías variadas. 
 
