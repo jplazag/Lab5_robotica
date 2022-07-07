@@ -105,5 +105,3 @@ A continuación se muestra la simulación de este ejercicio.
 - Considerando la importancia del tratamiento de entradas y salidas, pudo haber sido sumamente enriquecedor el hecho de desarrollar una práctica que permitiera interactuar directamente con el controlador y poder establecer nuestro propio mando de control, para así desarrollar una mejor idea del proceso en general, pero muy a nuestro pesar el tiempo no fue suficiente para alcanzar tal objetivo.
 
 - Aún nos falta mucho camino por recorrer a la hora de hablar de softwares como Robot Studio, ya que a la hora de desarrollar la tarea 2 de Pick and Place, nos encontramos con un problema al querer mover piezas con diferentes formas, debido a que no hallamos una forma de hacer que el manipulador modifique sus movimientos en aras de adaptarse a geometrías variadas. 
-
-- 
