@@ -22,6 +22,7 @@ Una vez se solucionaron estos problemas se procedio a posicionar en un solo prog
 El main routine consta del uso de estas dos señales de entrada digital para la elección de una de las dos rutinas, esto se puede realizar gracias a un if que como argumento tiene eventos mutualmente excluyentes en los que la activación de uno de los dos botones realiza la elección de los path. Otro dato importante a mencionar es que el main solo realiza la validación de if una vez. Esto debido a que este codigo se puede activar ciclicamente en el controlador fisico IRC5 y de esta manera puede correr el main de manera recurrente, evaluando asi los botones cada vez que se termine un path, y este a la espera de un nuevo comando.
 
 A continuación se presenta un video de la ejecución de las rutinas en el laboratorio.
+
 [![Práctica en el laboratorio](https://img.youtube.com/vi/H6_FSDALVg4/0.jpg)](https://www.youtube.com/watch?v=H6_FSDALVg4 "Práctica en el laboratorio")
 
 
